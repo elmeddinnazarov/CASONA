@@ -1,0 +1,787 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
+}
+
+* a {
+  text-decoration: none;
+  font-family: "GT Walsheim Pro Regular", sans-serif;
+}
+
+* .header {
+  position: relative;
+  background-color: #964C34;
+}
+
+* .header .header-line {
+  width: 85%;
+  margin: auto;
+  padding: 30px 0;
+}
+
+* .header .header-line .logo-box {
+  width: 7%;
+}
+
+* .header .header-line .logo-box img {
+  vertical-align: middle;
+}
+
+* .header .header-line .menu-box ul li {
+  text-align: center;
+}
+
+* .header .header-line .menu-box ul li .menu-box-a {
+  letter-spacing: 2px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 20px 25px;
+}
+
+* .header .header-line .menu-box ul li.home:hover .home-box-width {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  left: 0%;
+  top: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box {
+  width: 90%;
+  margin: auto;
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box ul .img-li .img-box {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box ul .img-li .img-box img {
+  width: 100%;
+  margin: 20px 0;
+  vertical-align: middle;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box ul .img-li .img-box img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box ul .text-li {
+  text-align: start;
+  padding-bottom: 30px;
+}
+
+* .header .header-line .menu-box ul li.home .home-box-width .home-box ul .text-li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "GT Walsheim Pro Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.4px;
+  color: #000;
+}
+
+* .header .header-line .menu-box ul li.shop:hover .shop-box-width {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  left: 20%;
+  top: 100%;
+  width: 47%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box {
+  width: 90%;
+  margin: auto;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .first-li {
+  padding: 20px 0 10px 0 !important;
+  margin-bottom: 20px;
+  font-family: "GT Walsheim Pro Regular", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  color: black !important;
+  position: relative;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .first-li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 1px;
+  background-color: #49afd6;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box li {
+  text-align: left;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box li a {
+  font-family: "GT Walsheim Pro Regular", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 32px;
+  color: #979797;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box li a:hover {
+  color: #49afd6;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box {
+  position: relative;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box {
+  height: 360px;
+  z-index: 15;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box img {
+  margin-left: 60px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 90%;
+  width: 80%;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box:hover::before {
+  width: 75%;
+  left: 65%;
+  right: 20%;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box:hover::after {
+  width: 75%;
+  left: 65%;
+  right: 20%;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box:before {
+  content: "";
+  position: absolute;
+  left: 60%;
+  right: 60%;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  top: 35px;
+  width: 0%;
+  height: 1px;
+  z-index: 25;
+  background-color: white;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .img-box:after {
+  content: "";
+  position: absolute;
+  left: 60%;
+  -webkit-transform: translate(-60%);
+          transform: translate(-60%);
+  bottom: 35px;
+  width: 0%;
+  height: 1px;
+  z-index: 25;
+  background-color: white;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .text-box {
+  position: absolute;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .text-box h5 {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 26.8px;
+  color: white;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .text-box p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  color: white;
+}
+
+* .header .header-line .menu-box ul li.shop .shop-box-width .shop-box .column-3 .content-box .text-box a {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: white;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  text-underline-offset: 4px;
+}
+
+* .header .header-line .menu-box ul li.products:hover .products-box-width {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  left: 35.5%;
+  top: 100%;
+  width: 28.5%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box {
+  padding-bottom: 40px;
+  width: 90%;
+  margin: auto;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box .first-li {
+  padding: 20px 0 10px 0 !important;
+  margin-bottom: 20px;
+  font-family: "GT Walsheim Pro Regular", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  color: black !important;
+  position: relative;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box .first-li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 1px;
+  background-color: #49afd6;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box li {
+  text-align: left;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box li a {
+  font-family: "GT Walsheim Pro Regular", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 32px;
+  color: #979797;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.products .products-box-width .products-box li a:hover {
+  color: #49afd6;
+}
+
+* .header .header-line .menu-box ul li.pages:hover .pages-box-width {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+* .header .header-line .menu-box ul li.pages .pages-box-width {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  left: 55%;
+  top: 100%;
+  width: 12%;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.pages .pages-box-width .pages-box {
+  padding: 20px 0 20px 20px;
+  width: 90%;
+  margin: auto;
+}
+
+* .header .header-line .menu-box ul li.pages .pages-box-width .pages-box li {
+  text-align: left;
+}
+
+* .header .header-line .menu-box ul li.pages .pages-box-width .pages-box li a {
+  text-transform: capitalize;
+  font-family: "GT Walsheim Pro Regular", sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 32px;
+  color: #979797;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .header .header-line .menu-box ul li.pages .pages-box-width .pages-box li a:hover {
+  color: #49afd6;
+}
+
+* .header .header-line .market-box ul li {
+  text-align: center;
+}
+
+* .header .header-line .market-box ul li a {
+  padding: 15px 10px;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+* .robot {
+  background-color: #964C34;
+}
+
+* .robot .big-box .img-box {
+  text-align: end;
+}
+
+* .robot .big-box .img-box img {
+  vertical-align: middle;
+}
+
+* .robot .big-box .text-box {
+  margin-top: 15rem;
+  width: 72%;
+  color: white;
+}
+
+* .robot .big-box .text-box h1 {
+  font-family: "GT Walsheim Pro Thin", Sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+* .robot .big-box .text-box p {
+  padding: 30px 0;
+  font-family: "GT Walsheim Pro Regular", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+* .robot .big-box .text-box a {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  color: #000;
+  background-color: #fff;
+}
+
+* .daily {
+  height: 47rem;
+}
+
+* .daily .width-box {
+  width: 85%;
+  margin: auto;
+}
+
+* .daily .width-box .daily-box .img-box {
+  position: relative;
+}
+
+* .daily .width-box .daily-box .img-box:hover .image-box img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* .daily .width-box .daily-box .img-box .image-box {
+  position: absolute;
+  z-index: 2;
+  margin: 50px 15px;
+  overflow: hidden;
+}
+
+* .daily .width-box .daily-box .img-box .image-box img {
+  vertical-align: middle;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 700ms ease-in-out;
+  transition: 700ms ease-in-out;
+}
+
+* .daily .width-box .daily-box .img-box .all-text {
+  top: 100px;
+  left: 50px;
+  height: 550px;
+  width: 85%;
+  margin: auto;
+  position: absolute;
+  z-index: 5;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .top-text h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .top-text p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #b4b4b4;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .bottom-text {
+  text-align: end;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .bottom-text a {
+  font-family: "GT Walsheim Pro Regular", sans-serif;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .bottom-text a:hover {
+  color: #2dbbf0;
+  border-bottom: 2px solid #2dbbf0;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .bottom-text a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  border-width: 5px;
+}
+
+* .daily .width-box .daily-box .img-box .all-text .bottom-text a::after {
+  border-style: solid;
+  border-color: transparent transparent transparent #2dbbf0;
+  content: "";
+  display: inline-block;
+  border-width: 0px;
+  width: 0;
+  height: 7px;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s visibility, .3s opacity, .3s width, .2s border-left-width;
+  transition: .3s visibility, .3s opacity, .3s width, .2s border-left-width;
+}
+
+* .essentials .width-box {
+  width: 85%;
+  margin: auto;
+}
+
+* .essentials .width-box .explore-all .top-part {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+* .essentials .width-box .explore-all .top-part h1 {
+  width: 20%;
+  margin: auto;
+  padding: 13px 20px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
+}
+
+* .essentials .width-box .explore-all .top-part h1::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: #b4b4b4;
+}
+
+* .essentials .width-box .explore-all .top-part a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #b4b4b4;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .essentials .width-box .explore-all .top-part a:hover {
+  color: #2dbbf0;
+}
+
+* .essentials .width-box .explore-all .bottom-part {
+  padding-bottom: 20px;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box:hover .icons {
+  bottom: 17px;
+  opacity: 1;
+  visibility: visible;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box img {
+  vertical-align: middle;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 700ms ease-in-out;
+  transition: 700ms ease-in-out;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box .icons {
+  position: absolute;
+  left: 45%;
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+  bottom: 5px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box .icons i {
+  padding: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: 400ms ease-in-out;
+  transition: 400ms ease-in-out;
+}
+
+* .essentials .width-box .explore-all .bottom-part .img-box .icons i:hover {
+  background-color: #2dbbf0;
+  color: white;
+}
+
+* .essentials .width-box .explore-all .bottom-part .text-box {
+  width: 70%;
+}
+
+* .essentials .width-box .explore-all .bottom-part .text-box a {
+  color: #000;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .essentials .width-box .explore-all .bottom-part .text-box a:hover {
+  color: #2dbbf0;
+}
+
+* .essentials .width-box .explore-all .bottom-part .text-box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: #888888;
+}
+
+* .season {
+  position: relative;
+}
+
+* .season .imgbox {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+}
+
+* .season .imgbox:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+* .season .imgbox img {
+  vertical-align: middle;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+* .season .txtbox {
+  top: 10rem;
+  left: 12rem;
+  width: 26%;
+  position: absolute;
+  z-index: 20;
+}
+
+* .season .txtbox h3 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 55px;
+  color: white;
+}
+
+* .season .txtbox p {
+  margin: 40px 0;
+  width: 70%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+}
+
+* .season .txtbox a {
+  padding: 15px 35px 15px 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "GT Walsheim Pro Medium", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: white;
+  background-color: black;
+  -webkit-transition: 700ms ease-in-out;
+  transition: 700ms ease-in-out;
+}
+
+* .season .txtbox a:hover {
+  color: white;
+  background-color: #2dbbf0;
+}
+
+* .season .txtbox a:hover::after {
+  opacity: 1;
+  border-width: 5px;
+  visibility: visible;
+}
+
+* .season .txtbox a::after {
+  border-style: solid;
+  border-color: transparent transparent transparent #ffffff;
+  content: "";
+  display: inline-block;
+  border-width: 0px;
+  width: 0;
+  height: 7px;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s visibility, .3s opacity, .3s width, .2s border-left-width;
+  transition: .3s visibility, .3s opacity, .3s width, .2s border-left-width;
+}
+
+* .collection {
+  height: 200vh;
+}
+
+* .collection .supp-coll .top-part {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+* .collection .supp-coll .top-part h1 {
+  width: 20%;
+  margin: auto;
+  padding: 13px 20px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000;
+}
+
+* .collection .supp-coll .top-part h1::after {
+  content: "";
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: #b4b4b4;
+}
+
+* .collection .supp-coll .top-part a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #b4b4b4;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+* .collection .supp-coll .top-part a:hover {
+  color: #2dbbf0;
+}
+/*# sourceMappingURL=style.css.map */
